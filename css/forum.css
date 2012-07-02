@@ -261,6 +261,58 @@
     line-height: 32px;
 }
 
+#UserProfile .field {
+	float:left;
+	position:relative;
+}
+
+#UserProfile .text {
+	width: 90%;
+}
+
+#UserProfile .text input {
+	width:60%;
+}
+
+#UserProfile .forumcountrydropdown {
+	width: 90%;
+}
+
+#UserProfile .forumcountrydropdown select {
+	width:60%;
+}
+
+#UserProfile .checkbox {
+	width:9%;
+}
+
+#UserProfile .confirmedpassword > .middleColumn {
+	width:100% !important;
+}
+
+#UserProfile .confirmedpassword .password .middleColumn {
+	width:70% !important;
+	float:right;
+}
+
+#UserProfile .ss-uploadfield {
+	width:90%;
+}
+
+/* UserProfile From Validation*/
+
+#UserProfile .field .message{
+	left:70%;
+	position:absolute;
+	margin-left:50px;
+	border:none;
+	color:#B80000;
+}
+
+#UserProfile .confirmedpassword .message{
+	margin-left:-27px;
+}
+
 #MemberLatestPosts h2 {
     font-size: 24px;
     margin-bottom: 15px;
