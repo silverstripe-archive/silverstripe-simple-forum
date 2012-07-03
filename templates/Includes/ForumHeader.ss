@@ -3,7 +3,7 @@
 	<% control ForumHolder %>
 		<div class="forum-header-forms">
 
-			<span class="forum-search-dropdown-icon">L</span>
+			<span class="forum-search-dropdown-icon"></span>
 			<div class="forum-search-bar">
 				<form class="forum-search" action="$Link(search)" method="get">
 					<fieldset>
@@ -51,7 +51,7 @@
 		</div><!-- forum-header-forms. -->
 	<% end_control %>
 
-	<h1 class="forum-heading">$HolderSubtitle</h1>
+	<h1 class="forum-heading"><a name='Header'>$HolderSubtitle</a></h1>
 	<p class="forum-breadcrumbs">$Breadcrumbs</p>
 	<p class="forum-abstract">$ForumHolder.HolderAbstract</p>
 		
