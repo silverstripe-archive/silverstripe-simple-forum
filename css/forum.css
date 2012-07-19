@@ -141,6 +141,10 @@
 	
 	.forum-heading {
 		font-size:36px;
+		border-bottom: 1px solid #E5E5E5;
+		margin: 0 0 23px 0;
+		padding-bottom: 6px;
+		line-height: 45px;
 	}
 
 	.forum-message-admin {}
@@ -246,6 +250,9 @@
 	.forum-topics .page-numbers {
 		width:20%;
 	}
+	.forum-topics .last-post p {
+		margin-bottom:0;
+	}
 
 	/* table link styles */
 
@@ -303,13 +310,18 @@
 	}
 	.forum-post .post-modifiers {
 		margin:10px 0;
+		float:right;
 	}
 	.forum-post .post-modifiers a {
 		color:#b22222;
 		margin-right:.5em;
 	}
+	.forum-post .post-modifiers .deleteLink {
+		margin-right:0;
+	}
 	.forum-post .post-type {
 		margin:10px 0;
+		clear:right;
 	}
 
 	.post-footer tr.category {
