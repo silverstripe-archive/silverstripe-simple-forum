@@ -18,8 +18,8 @@
 			<% if ForumThread.canCreate %>
 				<a href="$ReplyLink" title="<% _t('CLICKREPLY','Click here to reply to this topic') %>"><% _t('REPLY','Reply') %></a>
 			<% end_if %>
-			/
 			<% if CurrentMember %>
+				/
 				<% include ForumThreadSubscribe %>
 			<% end_if %>
 		</td>

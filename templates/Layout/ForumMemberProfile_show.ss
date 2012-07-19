@@ -39,6 +39,7 @@
 				</div>
 			</div>
 		<% end_control %>
+		<div class="clear"></div>
 		<% if LatestPosts %>
 			<div id="MemberLatestPosts">
 				<h2><% _t('LATESTPOSTS','Latest Posts') %></h2>

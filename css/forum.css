@@ -342,29 +342,6 @@
 	border-top:0;
 }
 
-/* User Profile */
-.profile-wrapper {
-	border-top: 5px solid #efefef;
-}
-#UserProfile .user-info {
-	width: 100px;
-}
-#UserProfile .user-content {
-	margin-left: 120px;
-}
-#UserProfile .user-content div {
-	padding: 3px;
-}
-#UserProfile .user-content label.left {
-	font-weight: bold;
-}
-#UserProfile .user-content p{
-	display:inline;
-}
-#MemberLatestPosts {
-	padding-bottom: 10px;
-}
-
 /* Footer */
 .forum-admin-features {
 	margin:20px 0;
@@ -392,6 +369,28 @@
 
 /* User Profile */
 
+.profile-wrapper {
+	border-top: 5px solid #efefef;
+}
+#UserProfile .user-info {
+	width: 100px;
+}
+#UserProfile .user-content {
+	margin-left: 120px;
+}
+#UserProfile .user-content div {
+	padding: 3px;
+}
+#UserProfile .user-content label.left {
+	font-weight: bold;
+}
+#UserProfile .user-content p{
+	display:inline;
+}
+#MemberLatestPosts {
+	padding-bottom: 10px;
+}
+
 #UserProfile h2 {
     font-size: 24px;
     margin-bottom: 15px;
@@ -405,7 +404,6 @@
 }
 
 #UserProfile .text {
-	width: 90%;
 	float:none;
 }
 
@@ -433,12 +431,12 @@
 #UserProfile .checkbox {
 	width:9%;
 	position:absolute;
-	left:-5px;
+	left:-10px;
 	top:6px;
 }
 
 #Password {
-	padding:0;
+	padding:10px 20px 10px 0;
 }
 
 #UserProfile .ss-uploadfield {
@@ -453,7 +451,8 @@
 }
 
 #UserProfile .field .message{
-	left:70%;
+	top:7px;
+	right:0;
 	position:absolute;
 	margin-left:50px;
 	border:none;
@@ -469,6 +468,10 @@
     margin-bottom: 15px;
     padding-top: 15px;
     line-height: 32px;
+}
+
+#Password.field .message {
+	top:17px;
 }
 
 /* when changing the breakpoint below, change it ito the same value in the script.js file as well */
@@ -550,6 +553,10 @@
 		border:1px solid #ccc;
 	}
 
+	.forum-topics .author th, .forum-topics .author td, .forum-topics .category th, .forum-topics .category td {
+		border:0;
+	}
+
 	.forum-topics tr.category {
 		color:#333;
 		text-align:left;
@@ -568,4 +575,45 @@
 	.forum-topics tr.category a:hover{
 		background:transparent;
 	}
+	#UserProfile .text {
+		width: 100%;
+	}
+	#UserProfile .text input {
+		width: 90%;
+	}
+	#UserProfile .forumcountrydropdown select {
+		width:100%;
+	}
+	#UserProfile .checkbox {
+		width:9%;
+		position:absolute;
+		left:-5px;
+		top:6px;
+	}
+	#UserProfile .user-info, .user-info {
+		float:none;
+		width:100%;
+		text-align:left;
+		padding:10px;
+	}
+	#UserProfile .user-contact, .user-content {
+		margin-left:0 !important;
+		padding:8px 5px;
+	}
+	.forum-post .quick-reply {
+		float:none;
+	}
+
+	/* Footer */
+
+	.forum-footer p.currently-online {
+		float:none;
+		display:block;
+		max-width: 100%
+	}
+	.forum-footer p.latest-member {
+		float:none;
+		display: block;
+	}
 }
+
