@@ -64,7 +64,7 @@
 				<strong><% _t('ATTACHED','Attached Files') %></strong> 
 				<ul class="post-attachments">
 				<% loop Attachments %>
-					<li>
+					<li class="attachment">
 						<a href="$Link"><img src="$Icon"></a>
 						<a href="$Link">$Name</a><br />
 						<% if ClassName = "Image" %>$Width x $Height - <% end_if %>$Size

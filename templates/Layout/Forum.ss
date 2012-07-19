@@ -15,13 +15,14 @@
 <% end_if %>
 
 <div class="forum-features">
+	<% include ForumHeaderForms %>
 	<% if getStickyTopics(0) %>
 		<table class="forum-sticky-topics" class="topicList" summary="List of sticky topics in this forum">
 			<tr class="category">
 				<td colspan="4">
-					<% _t('ANNOUNCEMENTS', 'Announcements') %>
+					<h2><% _t('ANNOUNCEMENTS', 'Announcements') %></h2>
 					<% if canPost %>
-						<a href="{$Link}starttopic" class="new-topic" title="<% _t('NEWTOPIC','Click here to start a new topic') %>"><img src="forum/images/forum_startTopic.gif" alt="<% _t('NEWTOPICIMAGE','Start new topic') %>" /></a>
+						<a href="{$Link}starttopic" class="new-topic" title="<% _t('NEWTOPIC','Click here to start a new topic') %>">Start a new topic</a>
 					<% end_if %>
 				</td>
 			</tr>
@@ -30,7 +31,6 @@
 			<% end_control %>
 		</table>
 	<% end_if %>
-	<% include ForumHeaderForms %>
 	<table class="forum-topics" summary="List of topics in this forum">
 		<tr class="category">
 			<td colspan="4">
