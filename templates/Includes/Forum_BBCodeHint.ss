@@ -1,6 +1,6 @@
 <% if BBTags %>
 	<div id="BBTagsHolder" class="hide">
-		<h2 class="bbcodeExamples"><% _t('AVAILABLEBB','Available BB Code tags') %></h2>
+		<h3 class="bbcodeExamples"><% _t('AVAILABLEBB','Available BB Code tags') %></h3>
 		<ul class="bbcodeExamples">
 			<% control BBTags %>
 				<li class="$FirstLast">

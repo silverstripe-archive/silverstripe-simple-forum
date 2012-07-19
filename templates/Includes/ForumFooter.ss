@@ -1,6 +1,6 @@
 <% with ForumHolder %>
 	<div class="forum-footer">
-		<p>
+		<p class="currently-online">
 			<strong><% _t('CURRENTLYON','Currently Online:') %></strong>
 			<% if CurrentlyOnline %>
 				<% loop CurrentlyOnline %>
@@ -10,7 +10,7 @@
 				<span><% _t('NOONLINE','There is nobody online.') %></span>
 			<% end_if %>
 		</p>
-		<p>
+		<p class="latest-member">
 			<strong><% _t('LATESTMEMBER','Welcome to our latest member:') %></strong>			
 			<% if LatestMembers(1) %>
 				<% loop LatestMembers(1) %>
