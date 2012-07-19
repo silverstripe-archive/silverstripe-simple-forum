@@ -51,13 +51,9 @@
     background: #b80000;
     color: #fff;
     display: inline-block;
-    border-radius: 4px;
-    padding: 6px 15px;
     margin: 10px 0;
-    text-transform: uppercase;
     letter-spacing: 1px;
     border-bottom: none !important;
-    font-size: 13px;
 }
 
 .Actions input.action:hover {
@@ -207,8 +203,19 @@
 	}
 	.new-topic {
 		float:right;
-		margin-top: 5px;
+		margin-top: 2px;
+		border-radius:20px !important;
+	    border:1px solid #65A839;
+	    color:#65A839;
+	    font-weight: bold;
+	    font-size: 13px;
+	    padding:5px 10px;
 	}
+	.new-topic:hover {
+		color:#fff;
+		background-color:#65A839 !important;
+	}
+
 	.gotoButtonEnd {
 		text-align: right;
 	}
@@ -279,7 +286,7 @@
 	}
 	.user-content {
 		margin-left:20%;
-		padding:8px 5px;
+		padding:8px 0px 8px 5px;
 	}
 	.forum-post .avatar {
 		border:5px solid #ccc;

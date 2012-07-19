@@ -36,7 +36,7 @@
 			<td colspan="4">
 				<h2><% _t('THREADS', 'Threads') %></h2>
 				<% if canPost %>
-					<a href="{$Link}starttopic" class="new-topic" title="<% _t('NEWTOPIC','Click here to start a new topic') %>"><img src="forum/images/forum_startTopic.gif" alt="<% _t('NEWTOPICIMAGE','Start new topic') %>" /></a>
+					<a href="{$Link}starttopic" class="new-topic" title="<% _t('NEWTOPIC','Click here to start a new topic') %>">Start a new topic</a>
 				<% end_if %>
 			</td>
 		</tr>
