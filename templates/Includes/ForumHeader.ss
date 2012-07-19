@@ -1,13 +1,9 @@
 <div class="forum-header">
 
-	<% control ForumHolder %>
-		
-		<p class="forum-breadcrumbs">$Breadcrumbs</p>
-		<h1 class="forum-heading">$HolderSubtitle</h1>
-		<p class="forum-abstract">$ForumHolder.HolderAbstract</p>
+	<p class="forum-breadcrumbs">$Breadcrumbs</p>
+	<h1 class="forum-heading">$HolderSubtitle</h1>
+	<p class="forum-abstract">$ForumHolder.HolderAbstract</p>
 
-	<% end_control %>
-	
 	<% if Moderators %>
 		<p>
 			Moderators: 
