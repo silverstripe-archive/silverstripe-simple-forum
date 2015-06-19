@@ -1,4 +1,4 @@
-<tr class="<% if IsSticky || IsGlobalSticky %>sticky<% end_if %> <% if IsGlobalSticky %>global-sticky<% end_if %>">
+<tr class="topic-row <% if IsSticky || IsGlobalSticky %>sticky<% end_if %> <% if IsGlobalSticky %>global-sticky<% end_if %>">
 	<td class="topicName">
 		<a class="topic-title" href="$Link">$Title</a>
 		<p class="topic-summary">

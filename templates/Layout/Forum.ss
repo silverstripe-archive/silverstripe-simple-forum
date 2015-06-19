@@ -13,30 +13,37 @@
 <% if ForumPosters = NoOne %>
 	<p class="message error"><% _t('READONLYFORUM', 'This Forum is read only. You cannot post replies or start new threads') %></p>
 <% end_if %>
-<% if canPost %>
-	<p><a href="{$Link}starttopic" title="<% _t('NEWTOPIC','Click here to start a new topic') %>"><img src="forum/images/forum_startTopic.gif" alt="<% _t('NEWTOPICIMAGE','Start new topic') %>" /></a></p>
-<% end_if %>
 
 <div class="forum-features">
+	<% include ForumHeaderForms %>
 	<% if getStickyTopics(0) %>
 		<table class="forum-sticky-topics" class="topicList" summary="List of sticky topics in this forum">
 			<tr class="category">
-				<td colspan="3"><% _t('ANNOUNCEMENTS', 'Announcements') %></td>
+				<td colspan="4">
+					<h2><% _t('ANNOUNCEMENTS', 'Announcements') %></h2>
+					<% if canPost %>
+						<a href="{$Link}starttopic" class="new-topic" title="<% _t('NEWTOPIC','Click here to start a new topic') %>">Start a new topic</a>
+					<% end_if %>
+				</td>
 			</tr>
 			<% control getStickyTopics(0) %>
 				<% include TopicListing %>
 			<% end_control %>
 		</table>
 	<% end_if %>
-
 	<table class="forum-topics" summary="List of topics in this forum">
 		<tr class="category">
-			<td colspan="4"><% _t('THREADS', 'Threads') %></td>
+			<td colspan="4">
+				<h2><% _t('THREADS', 'Threads') %></h2>
+				<% if canPost %>
+					<a href="{$Link}starttopic" class="new-topic" title="<% _t('NEWTOPIC','Click here to start a new topic') %>">Start a new topic</a>
+				<% end_if %>
+			</td>
 		</tr>
-		<tr>
-			<th class="odd"><% _t('TOPIC','Topic') %></th>
-			<th class="odd"><% _t('POSTS','Posts') %></th>
-			<th class="even"><% _t('LASTPOST','Last Post') %></th>
+		<tr class="topic-title-row">
+			<th class="odd topic"><h4><% _t('TOPIC','Topic') %></h4></th>
+			<th class="odd posts"><h4><% _t('POSTS','Posts') %></h4></th>
+			<th class="even last-post"><h4><% _t('LASTPOST','Last Post') %></h4></th>
 		</tr>
 		<% if Topics %>
 			<% control Topics %>
